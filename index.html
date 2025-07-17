@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Precision Tools Workshop</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .hero {
+      background: url('images/workshop-hero.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .section-title {
+      margin-bottom: 30px;
+    }
+    .product-card {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      padding: 30px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">PrecisionTools</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Precision Tools & Machine Manufacturing</h1>
+      <p class="lead">Crafting High-Quality Tools for Industrial Excellence</p>
+      <a href="#contact" class="btn btn-primary mt-4">Get a Quote</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title">About Us</h2>
+      <p>We are a leading manufacturer of industrial machines and precision tools. With decades of engineering expertise, our mission is to deliver reliable, efficient, and durable equipment for manufacturers across the globe.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="section-title">Our Services</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Custom Machine Design</h5>
+              <p class="card-text">Tailored machine design solutions to meet your production needs with high precision.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Tool Manufacturing</h5>
+              <p class="card-text">High-quality, durable tools for machining, cutting, shaping, and forming applications.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Maintenance & Support</h5>
+              <p class="card-text">Comprehensive support, maintenance, and repair services for all our machines and tools.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title">Featured Products</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card product-card h-100">
+            <img src="images/cnc-machine.jpg" class="card-img-top" alt="CNC Machine">
+            <div class="card-body">
+              <h5 class="card-title">CNC Milling Machine</h5>
+              <p class="card-text">Precision-engineered for high-speed, accurate milling operations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card product-card h-100">
+            <img src="images/lathe-machine.jpg" class="card-img-top" alt="Lathe Machine">
+            <div class="card-body">
+              <h5 class="card-title">Industrial Lathe</h5>
+              <p class="card-text">Robust and versatile lathe machine for heavy-duty turning tasks.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card product-card h-100">
+            <img src="images/drilling-machine.jpg" class="card-img-top" alt="Drilling Machine">
+            <div class="card-body">
+              <h5 class="card-title">Hydraulic Drilling Tool</h5>
+              <p class="card-text">High-performance tool for industrial drilling with precision controls.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center section-title">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" required />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2025 PrecisionTools Workshop. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
